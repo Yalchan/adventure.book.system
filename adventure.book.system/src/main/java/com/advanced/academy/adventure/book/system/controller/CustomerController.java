@@ -1,11 +1,9 @@
 package com.advanced.academy.adventure.book.system.controller;
 
 import com.advanced.academy.adventure.book.system.service.CustomerService;
-import model.Customer;
+import com.advanced.academy.adventure.book.system.model.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import javax.validation.constraints.Null;
 
 @RestController
 @RequestMapping("customer")

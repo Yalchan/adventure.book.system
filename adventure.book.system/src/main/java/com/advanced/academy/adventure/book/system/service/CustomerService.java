@@ -1,7 +1,7 @@
 package com.advanced.academy.adventure.book.system.service;
 
 import com.advanced.academy.adventure.book.system.repository.CustomerRepository;
-import model.Customer;
+import com.advanced.academy.adventure.book.system.model.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

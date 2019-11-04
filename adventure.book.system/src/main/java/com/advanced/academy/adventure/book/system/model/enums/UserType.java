@@ -1,4 +1,4 @@
-package model.enums;
+package com.advanced.academy.adventure.book.system.model.enums;
 
 public enum UserType {
     USER,
