@@ -9,7 +9,7 @@ import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name="customers")
-@Where(clause ="isDeleted=false")
+@Where(clause ="is_deleted=false")
 public class Customer {
     @Id
     @Column(name ="id")
