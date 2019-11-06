@@ -17,10 +17,10 @@ public class CustomerService {
 
     public void createOrUpdateCustomer(Customer customer) {
         if (customer.getId() == null) {
-            validateAndGreateCustomer(customer);
+            createCustomer(customer);
             return;
         }
-        validateAndUpdateCustomer(customer);
+        updateCustomer(customer);
         //return customer.getUserName();
     }
 
@@ -28,18 +28,15 @@ public class CustomerService {
         return null;
     }
 
-    private void validateAndGreateCustomer(Customer customer) {
-        validateCustomer(customer);
+    private void createCustomer(Customer customer) {
+        customerRepository.save(customer);
     }
 
-    private void validateAndUpdateCustomer(Customer customer) {
-        validateCustomer(customer);
-    }
-
-    private void validateCustomer(Customer customer) {
-
+    private void updateCustomer(Customer customer) {
+        customerRepository.save(customer);
     }
 
     public void deleteCustomer(Integer customerId) {
+        customerRepository.deactivateCustomer(customerId);
     }
 }
