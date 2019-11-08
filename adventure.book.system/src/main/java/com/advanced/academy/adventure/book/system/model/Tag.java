@@ -1,9 +1,9 @@
 package com.advanced.academy.adventure.book.system.model;
 
+import com.advanced.academy.adventure.book.system.model.adventure.Adventure;
+
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -16,5 +16,25 @@ public class Tag {
     private  String value;
 
     @ManyToMany(mappedBy ="tags")
-    private Set<Adventure> adventure=new HashSet<>();
+    private Set<Adventure> adventures=new HashSet<>();
+
+    public Integer getId() {
+        return id;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+    public Set<Adventure> getAdventures() {
+        return adventures;
+    }
+
+    public void setAdventures(Set<Adventure> adventures) {
+        this.adventures = adventures;
+    }
 }

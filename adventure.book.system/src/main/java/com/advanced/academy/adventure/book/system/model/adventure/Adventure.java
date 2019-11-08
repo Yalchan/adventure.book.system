@@ -1,4 +1,6 @@
-package com.advanced.academy.adventure.book.system.model;
+package com.advanced.academy.adventure.book.system.model.adventure;
+
+import com.advanced.academy.adventure.book.system.model.Tag;
 
 import javax.persistence.*;
 import java.util.HashSet;

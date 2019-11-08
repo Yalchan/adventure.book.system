@@ -1,4 +1,4 @@
-package com.advanced.academy.adventure.book.system.model;
+package com.advanced.academy.adventure.book.system.model.adventure;
 
 import com.advanced.academy.adventure.book.system.model.enums.EndGameType;
 

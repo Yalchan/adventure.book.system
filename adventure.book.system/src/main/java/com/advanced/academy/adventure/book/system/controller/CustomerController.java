@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 
 @RestController
-@RequestMapping("customer")
+@RequestMapping("api/customer")
 public class CustomerController {
 
 
