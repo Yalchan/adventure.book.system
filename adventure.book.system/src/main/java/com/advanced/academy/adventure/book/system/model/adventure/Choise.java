@@ -8,17 +8,18 @@ import javax.persistence.*;
 @Table(name = "choises")
 public class Choise {
     @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     @Column(name = "id")
     private Integer id;
 
     @Column(name = "description", columnDefinition = "TEXT")
     private String description;
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.ALL},fetch = FetchType.EAGER)
     @JoinColumn(name = "results_in_step")
     private Step resultsInStep;
 
 
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.ALL})
     @JoinColumn(name = "step_given_in_id")
     private Step stepGivenIn;
 
