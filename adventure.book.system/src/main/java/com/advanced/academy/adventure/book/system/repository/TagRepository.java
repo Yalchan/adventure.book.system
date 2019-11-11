@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface TagRepository extends CrudRepository<Tag, Integer>, GetReference {
+public interface TagRepository extends CrudRepository<Tag, Integer>, GetReferance {
 
     @Query("Select t From Tag t where :adventure IN (adventures) ")
     Optional< List<Tag>> findAllByAdventure(@Param("adventure")Adventure adventure);

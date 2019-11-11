@@ -31,7 +31,7 @@ public class TagService {
         return tag;
     }
 
-    public List<Tag> getTagByAdventureId(Integer adventureId){
+    public List<Tag> getAllTagsByAdventureId(Integer adventureId){
         List<Tag>  tagList=new ArrayList<>();
         Adventure adventure = tagRepository.getReference(Adventure.class, adventureId);
         Optional<List<Tag>> result=tagRepository.findAllByAdventure(adventure);

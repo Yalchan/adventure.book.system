@@ -6,12 +6,12 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
 
 @Repository
-public class GetReferanceIml implements GetReference {
+public class GetReferanceImpl implements GetReferance {
 
     private final EntityManager entityManager;
 
     @Autowired
-    public GetReferanceIml(EntityManager entityManager) {
+    public GetReferanceImpl(EntityManager entityManager) {
         this.entityManager = entityManager;
     }
 
